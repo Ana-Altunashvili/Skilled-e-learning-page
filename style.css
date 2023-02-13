@@ -1,0 +1,415 @@
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-repeat: no-repeat;
+}
+
+/* header */
+
+header {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_button {
+    background-color: #13183F;
+    width: 140px;
+    height: 48px;
+    border-radius: 28px;
+    color: white;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 700;
+    border: 0;
+    cursor: pointer;
+}
+
+.header_button:hover {
+    background-color: #666CA3;
+}
+
+.header_logo {
+    width: 89px;
+    height: 100%;
+    margin-right: 114px;
+}
+
+/* main*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+/* Course introduction Section*/
+
+.introduction_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.Course_introduction h1 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 50.4px;
+    color: #13183F;
+    margin-bottom: 26px;
+}
+
+.Course_introduction p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #83869A;
+    margin-bottom: 24px;
+}
+
+.main_button {
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    width: 167px;
+    height: 56px;
+    border-radius: 31.5px;
+    border: 0;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.main_button:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+
+/*main photo*/
+
+.mobile_photo {
+    max-width: 100%;
+    margin-top: 46px;
+}
+
+.tablet_photo {
+    display: none;
+}
+
+/*Card Section*/
+
+.Card_Section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/*card header */
+
+.Card_header {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 10px;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 40px;
+}
+
+.Card_header h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32px;
+    text-align: left;
+    padding: 24px 29px 32px 28px;
+}
+
+/* cards */
+
+.Cards {
+    padding-left: 16px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*position: relative;*/
+    border-radius: 10px;
+    width: 343px;
+    height: 259px;
+}
+
+.icon {
+    margin-top: -24px;
+    margin-bottom: 24px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+}
+
+.card_text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.Cards h3 {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 25px;
+    color: #13183F;
+    margin-bottom: 16px;
+}
+
+.Cards p {
+    color: #13183F;
+    margin: 0px 29px 24px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #83869A;
+}
+
+.Cards button {
+    background: white;
+    color: #F74780;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    margin-bottom: 32px;
+    padding: 0;
+    border: 0;
+    width: 110px;
+    cursor: pointer;
+}
+
+.Cards button:hover {
+    color: #FFA7C3;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    padding: 16px;
+    background: #13183F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_button {
+    background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+    width: 140px;
+    height: 48px;
+    border-radius: 28px;
+    color: white;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 700;
+    border: 0;
+    cursor: pointer;
+}
+
+.footer_button:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+
+
+/* for tablet version */
+
+@media screen and (min-width:768px) {
+    body {
+        background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+        background-image: url("./images/image-hero-tablet@2x.png");
+        background-repeat: no-repeat;
+        background-size: 640px 640px;
+        background-position: top -80px right -280px;
+        z-index: 100;
+    }
+
+    header {
+        padding: 32px 40px;
+    }
+
+    main {
+        padding: 40px;
+    }
+
+    .introduction_container {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .mobile_photo {
+        display: none;
+    }
+
+    .Course_introduction {
+        flex-basis: 50%;
+    }
+
+    .Course_introduction h1 {
+        width: 326px;
+    }
+
+    .Course_introduction p {
+        width: 398px;
+    }
+
+    .Card_header {
+        width: 339px;
+        height: 259px;
+        margin-bottom: 56px;
+    }
+
+    .Cards {
+        display: flex;
+        flex-direction: column;
+        width: 339px;
+        height: 259px;
+        margin-bottom: 56px;
+        box-shadow: 0px 25px 50px rgb(6 22 141 / 4%);
+    }
+
+    .Card_Section {
+        display: flex;
+        margin-top: 186px;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .Card_text_container {
+        margin-left: 32px;
+    }
+
+
+    .Card_header h2 {
+        padding: 56px 21px 139px 32px;
+    }
+
+    .footer {
+        padding-left: 39px;
+        padding-right: 39px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+        background-image: url("./images/image-hero-desktop@2x.png");
+        background-repeat: no-repeat;
+        background-size: 991px 936px;
+        background-position: top -120px right -280px;
+        z-index: 99;
+    }
+
+    header {
+        padding: 24px 165px;
+    }
+
+    main {
+        padding: 165px;
+    }
+
+    .introduction_container {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .Course_introduction {
+        flex-basis: 50%;
+    }
+
+    .Course_introduction h1 {
+        font-size: 56px;
+        line-height: 71px;
+        width: 457px;
+    }
+
+    .Course_introduction p {
+        font-size: 18px;
+        line-height: 28px;
+        width: 445px;
+        margin-bottom: 40px;
+    }
+
+    .main_button {
+        height: 63px;
+    }
+
+    .Card_header {
+        width: 350px;
+        height: 322px;
+        margin-bottom: 80px;
+    }
+
+    .Cards {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        height: 322px;
+        box-shadow: 0px 25px 50px rgb(6 22 141 / 4%);
+    }
+
+    .Card_Section {
+        display: flex;
+        margin-top: 226px;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .icon {
+        margin-bottom: 32px;
+        ;
+    }
+
+    .Card_header h2 {
+        font-size: 32px;
+        line-height: 40px;
+        padding: 64px 32px 138px 32px;
+        margin-bottom: 24px;
+    }
+
+    .Cards h3 {
+        font-size: 24px;
+        line-height: 30.24px;
+    }
+
+    .Cards p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .Cards button {
+        margin-bottom: 40px;
+    }
+
+    .footer {
+        padding: 0 165px 0 165px;
+    }
+
+    .footer_button {
+        width: 167px;
+        height: 56px;
+        font-size: 18px;
+        line-height: 28px;
+        margin-right: 165px;
+    }
+
+    .footer_logo {
+        margin-left: 165px;
+    }
+}
