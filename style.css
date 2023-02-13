@@ -146,7 +146,7 @@ main {
 
 .icon {
     margin-top: -24px;
-    margin-bottom: 24px;
+    /*margin-bottom: 24px;*/
     width: 56px;
     height: 56px;
     border-radius: 50%;
@@ -156,7 +156,6 @@ main {
 .card_text {
     display: flex;
     flex-direction: column;
-    margin-bottom: 40px;
 }
 
 .Cards h3 {
@@ -165,6 +164,7 @@ main {
     line-height: 25px;
     color: #13183F;
     margin-bottom: 16px;
+    margin-top: 24px;
 }
 
 .Cards p {
